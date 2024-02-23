@@ -42,3 +42,11 @@
     lucide-react for beautiful icons
     mui library for charts and components
     axios for the different api requests
+
+## Challenges
+
+    The first challenge was coming up with a good looking dashboard.. I have taken inspiration from other designers and eventually made a "not so bad" looking dashboard from my perspective but there are many things still to be introduced and updated.
+
+    The Second challenge was writing the code for schedule posts, it was very interesting to work on an algorithm which should post the data automatically after a given time. It took some time but I cracked it somehow and was satisfied.
+
+    The third challenge was user authentication but it was not that hard to solve, I tested statemanagement code multiple times and was able to finally write the logic for user authentication.

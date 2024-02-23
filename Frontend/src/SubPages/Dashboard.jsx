@@ -28,8 +28,8 @@ const Home = () => {
 
   const devices = [
     { device: "Smartphone", percentage: "15%", icon: Smartphone },
-    { device: "Tablet", percentage: "15%", icon: Tablet },
-    { device: "Laptop", percentage: "15%", icon: Laptop },
+    { device: "Tablet", percentage: "65%", icon: Tablet },
+    { device: "Laptop", percentage: "10%", icon: Laptop },
   ];
 
   const shortBoxes = [
