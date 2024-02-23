@@ -2,6 +2,8 @@ import React from "react";
 import SchedulePosts from "./SchedulePosts";
 
 const ScheduleLayout = () => {
+  //Can add more objects for more scheduling posts
+  //Requires Improvement
   const data = [{ no: 1 }];
 
   return (

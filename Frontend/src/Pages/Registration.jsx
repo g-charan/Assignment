@@ -1,18 +1,17 @@
 import axios from "axios";
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router";
-import { dataContext } from "../context/AuthUser";
 
 const Registration = () => {
+  // React Hooks
   const [confirmation, setConfirmation] = useState("");
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
-  const [data, setData] = useState([]);
-  const [newName, setnewName] = useContext(dataContext);
-
+  // Navigation
   const navigate = useNavigate();
 
+  // API URL
   const url = "http://127.0.0.1:8000/users/";
 
   const postData = async () => {
@@ -31,16 +30,9 @@ const Registration = () => {
           <p className="text-2xl font-semibold text-black">Registration</p>
         </div>
         <div className="flex flex-col self-center  border-black w-[75rem] h-[35rem] rounded-md z-10 shadow-lg bg-[#050505] ">
-          {/* <div className="flex justify-center w-full h-[2rem] ">
-            <p className="text-white ">Register</p>
-          </div> */}
           <div className="flex justify-around w-full h-full">
             <div className="flex flex-col justify-center w-full border-r-2 h-[25rem] self-center p-2">
               <h1 className="h-10 text-white place-self-center">JOIN US</h1>
-              {/* <p className="text-center h-[8rem] text-white">
-                This is a open bookstore website. lorean ghdsakjg ajsgdjsagdas
-                jhkajghdasdas
-              </p> */}
             </div>
             <div className="flex flex-col justify-center w-full h-full ">
               <div className="flex flex-col self-center p-5">

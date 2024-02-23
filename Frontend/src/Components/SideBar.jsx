@@ -17,6 +17,8 @@ const SideBar = () => {
     { title: "Posts", src: img3, path: "/posts" },
     { title: "Schedule Posts ", src: img1, path: "/schedule" },
 
+    // Can use the commented objects for changes
+
     // { title: "Accounts", src: img4, gap: true, path: "/accounts" },
     // { title: "Search", src: img5 },
     // { title: "Analytics", src: img6 },
@@ -71,9 +73,6 @@ const SideBar = () => {
           ))}
         </ul>
       </div>
-      {/* <div className="flex-1 h-screen p-7">
-        <h1 className="text-2xl font-semibold ">Home Page</h1>
-      </div> */}
     </div>
   );
 };

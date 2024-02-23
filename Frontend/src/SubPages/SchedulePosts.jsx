@@ -39,6 +39,7 @@ const SchedulePosts = () => {
     schedule.scheduleFunc(title, desc, scheduledTime);
   }, [handleDescChange, handleTitleChange, handleTimeChange]);
 
+  // Formats the time for countdown
   const formatTime = (milliseconds) => {
     if (milliseconds === null || milliseconds <= 0) {
       return "";
@@ -81,6 +82,7 @@ const SchedulePosts = () => {
     };
   }, [timeRemaining]);
 
+  // Timer
   useEffect(() => {
     let interval;
     if (timeRemaining !== null && timeRemaining > 0) {
@@ -116,8 +118,6 @@ const SchedulePosts = () => {
             value={desc}
             onChange={handleDescChange}
           ></textarea>
-          {/* <label for="Date">Date:</label>
-        <input type="text" id="Date" className="border-2 rounded-md"></input> */}
           <label for="Time">Date Time:</label>
           <input
             type="datetime-local"

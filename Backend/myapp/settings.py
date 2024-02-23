@@ -30,6 +30,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+# Added cors headers ,django rest framework,api app
 INSTALLED_APPS = [
     "corsheaders",
     'django.contrib.admin',

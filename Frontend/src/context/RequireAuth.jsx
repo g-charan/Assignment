@@ -2,6 +2,8 @@ import React from "react";
 import { Navigate } from "react-router-dom";
 import { useAuth } from "./ProtectedRoutes";
 
+//Requires the user to login & restricts navigating to other pages except Registration
+
 export const RequireAuth = ({ children }) => {
   const auth = useAuth();
   if (!auth.user) {

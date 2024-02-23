@@ -2,6 +2,8 @@ import React from "react";
 import MainLayout from "../Components/MainLayout";
 import SideBar from "../Components/SideBar";
 
+// Main Home Page
+
 const Home = () => {
   return (
     <div className="flex flex-row">

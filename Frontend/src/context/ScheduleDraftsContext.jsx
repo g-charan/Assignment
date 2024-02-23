@@ -1,5 +1,7 @@
 import React, { createContext, useContext, useState } from "react";
 
+// Statemanagement for drafting a schedule post
+
 export const DraftContext = createContext(null);
 
 export const ScheduleDraftsContext = ({ children }) => {

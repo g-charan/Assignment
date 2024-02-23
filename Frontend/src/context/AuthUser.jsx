@@ -1,11 +1,12 @@
 import React, { createContext, useState } from "react";
 export const dataContext = createContext(null);
 
+// context for testing or passing data through the whole application
+
 function RO({ children }) {
   const [newLogin, setnewLogin] = useState({
     login: "",
   });
-  // const [newName, setnewName] = useState();
 
   return (
     <dataContext.Provider value={[newLogin, setnewLogin]}>

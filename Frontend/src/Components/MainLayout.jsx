@@ -3,6 +3,8 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import routes from "../Datasets/routes";
 import { RequireAuth } from "../context/RequireAuth";
 
+// Dynamic page loading using react routers
+
 export const valueContext = createContext(null);
 const MainLayout = () => {
   const [value, setValue] = useState();

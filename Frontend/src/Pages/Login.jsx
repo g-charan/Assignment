@@ -5,6 +5,7 @@ import { dataContext } from "../context/AuthUser";
 import { useAuth } from "../context/ProtectedRoutes";
 
 function Login() {
+  // React Hooks
   const [password, setPass] = useState("");
   const auth = useAuth();
   const [loading, setLoading] = useState(false);
@@ -12,10 +13,13 @@ function Login() {
   const [email, setEmail] = useState("");
   const [newLogin, setnewLogin] = useContext(dataContext);
 
+  // API URL
   const url = "http://127.0.0.1:8000/login/";
 
+  //Navigation
   const navigate = useNavigate();
 
+  //Posting to API
   const postData = async () => {
     setLoading(true);
     try {
@@ -54,9 +58,6 @@ function Login() {
             <p className="text-2xl font-semibold text-black">Login</p>
           </div>
           <div className="flex flex-col self-center w-[55rem] h-[25rem] bg-black ">
-            {/* <div className="flex justify-center w-full h-[2rem] border-2">
-            <p className="text-white ">Register</p>
-          </div> */}
             <div className="flex justify-around w-full h-full">
               <div className="flex flex-col justify-center w-full h-full">
                 <div className="flex flex-col self-center p-5">

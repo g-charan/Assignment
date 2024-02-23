@@ -1,6 +1,8 @@
 from django.urls import path
 from . import views
 
+# All the API paths
+
 urlpatterns = [
     path('', views.getData),
     path('users/', views.getUsers),

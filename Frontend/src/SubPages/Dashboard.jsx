@@ -11,19 +11,20 @@ import {
   UserRoundCheck,
   UserRoundPlus,
 } from "lucide-react";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import facebook from "../assets/facebook.png";
 import insta from "../assets/insta.png";
 import user from "../assets/user1.png";
 import whatsapp from "../assets/whatsapp.png";
 
 const Home = () => {
+  // React Hooks( Can use these for data in graphs )
   const [daily, setDaily] = useState();
   const [total, setTotal] = useState();
-  const [monthly, setMonthly] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+  const [monthly, setMonthly] = useState([]);
   const [expenses, setExpenses] = useState([]);
 
-  useEffect(() => {}, []);
+  //Static JSON Data
 
   const devices = [
     { device: "Smartphone", percentage: "15%", icon: Smartphone },
@@ -49,15 +50,7 @@ const Home = () => {
     { id: 1, value: 15, label: "Comments" },
     { id: 2, value: 20, label: "Likes" },
   ];
-  const pieData = [];
 
-  expenses.map((data) => {
-    pieData.push({
-      id: data.category,
-      value: data.expense,
-      label: data.category,
-    });
-  });
   const uData = [4000, 3000, 2000, 2780, 1890, 2390, 3490];
   const pData = [2400, 1398, 9800, 3908, 4800, 3800, 4300];
   const sData = [800, 4000, 7120, 2908, 4000, 2100, 3200];
@@ -114,7 +107,6 @@ const Home = () => {
               ]}
               xAxis={[{ scaleType: "point", data: xLabels }]}
             />
-            {console.log(pieData)}
           </div>
         </div>
       </div>

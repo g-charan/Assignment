@@ -2,8 +2,10 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 const Posts = () => {
+  //API URL
   const url = "http://127.0.0.1:8000/posts/";
 
+  //React Hooks
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const slicedData = data.slice(-3);
@@ -20,6 +22,7 @@ const Posts = () => {
   useEffect(() => {
     getData();
   }, []);
+
   return (
     <div className="w-full">
       {loading ? (

@@ -3,12 +3,17 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from api.serializer import UserSerializer, PostsSerializer
 from .models import User, Posts
-# Create your views here.
+
+
+
+# For Testing
 
 @api_view(["GET"])
 def getData(request):
     hello = {"hello" : "Charan"}
     return Response(hello)
+
+# For retrieving and updating Users
 
 @api_view(['GET', 'POST'])
 def getUsers(request):
@@ -22,6 +27,9 @@ def getUsers(request):
             serializer.save()
             return Response(serializer.data)
 
+
+# For retrieving and updating Posts
+        
 @api_view(['GET', 'POST'])
 def getPosts(request):
     if(request.method == 'GET'):
@@ -35,6 +43,9 @@ def getPosts(request):
             serializer.save()
             return Response(serializer.data)
         return Response("error")
+    
+
+# Checks if the user is present in the Users else returns false
         
 @api_view(['POST'])
 def login(request):
