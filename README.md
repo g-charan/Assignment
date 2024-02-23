@@ -33,3 +33,12 @@
 
     You can schedule posts here by choosing the date and time of your preference(Note that you can only send one but I have written a flexible code to add multiple in the future)
     the post gets posted to the api which stores the data after the countdown reaches 0
+
+## Dependencies
+
+    react-router for routing in the frontend
+    django-rest-framework for creating REST apis quickly
+    tailwindcss for css styling
+    lucide-react for beautiful icons
+    mui library for charts and components
+    axios for the different api requests
